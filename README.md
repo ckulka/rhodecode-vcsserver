@@ -6,7 +6,7 @@ This image is the same as [ckulka/rhodecode-rccontrol](https://hub.docker.com/r/
 VCS Server is installed and ready-to-use.
 
 ```bash
-docker run -it -p 9900:9900 ckulka/rhodecode-vcsserver
+docker run -it -p 9900:9900 ckulka/rhodecode-vcsserver:4.9.0
 ```
 
 For more details, see <https://github.com/ckulka/rhodecode-vcsserver>.
@@ -30,7 +30,7 @@ services:
     image: ckulka/rhodecode-vcsserver:4.9.0
 
   db:
-    image: postgres:alpine
+    image: postgres:9-alpine
     environment:
       POSTGRES_PASSWORD: cookiemonster
 
