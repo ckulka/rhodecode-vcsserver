@@ -5,9 +5,7 @@
 This image is the same as [ckulka/rhodecode-rccontrol](https://hub.docker.com/r/ckulka/rhodecode-rccontrol), with the exception that a
 VCS Server is installed and ready-to-use.
 
-```bash
-docker run -it -p 9900:9900 ckulka/rhodecode-vcsserver
-```
+`docker run -it -p 9900:9900 ckulka/rhodecode-vcsserver`
 
 For more details, see <https://github.com/ckulka/rhodecode-rccontrol>.
 
