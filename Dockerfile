@@ -7,7 +7,7 @@ RUN .rccontrol-profile/bin/rccontrol	\
 		install VCSServer				\
 		--version $RC_VERSION			\
 		--accept-license				\
-		'{"host": "0.0.0.0", "port": 8080}'
+		'{"host": "0.0.0.0", "port": 9900}'
 
-EXPOSE 8080
-CMD .rccontrol/vcsserver-1/profile/bin/gunicorn --error-logfile=- --paster=$HOME/.rccontrol/vcsserver-1/vcsserver.ini --config=$HOME/.rccontrol/vcsserver-1/gunicorn_conf.py
+EXPOSE 9900
+CMD rc_start
