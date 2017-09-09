@@ -1,6 +1,6 @@
 # RhodeCode VCS Server
 
-[![](https://images.microbadger.com/badges/version/ckulka/rhodecode-vcsserver:4.9.0.svg)](https://github.com/ckulka/rhodecode-vcsserver "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/ckulka/rhodecode-vcsserver.svg)](https://github.com/ckulka/rhodecode-vcsserver "Get your own version badge on microbadger.com")
 
 This image is the same as [ckulka/rhodecode-rccontrol](https://hub.docker.com/r/ckulka/rhodecode-rccontrol/), with the exception that a
 VCS Server is installed and ready-to-use.
@@ -27,7 +27,7 @@ version: "3"
 
 services:
   vcsserver:
-    image: ckulka/rhodecode-vcsserver:4.9.0
+    image: ckulka/rhodecode-vcsserver
 
   db:
     image: postgres:alpine
@@ -35,7 +35,7 @@ services:
       POSTGRES_PASSWORD: cookiemonster
 
   rhodecode:
-    image: ckulka/rhodecode-ce:4.9.0
+    image: ckulka/rhodecode-ce
     environment:
       RC_USER: admin
       RC_PASSWORD: ilovecookies
