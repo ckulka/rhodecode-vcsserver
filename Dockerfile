@@ -11,4 +11,4 @@ RUN .rccontrol-profile/bin/rccontrol	\
 		'{"host": "0.0.0.0", "port": 9900}'
 
 EXPOSE 9900
-CMD rc_start
+CMD ./start.sh
