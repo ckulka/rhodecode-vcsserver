@@ -1,6 +1,6 @@
 # RhodeCode VCS Server
 
-[![](https://images.microbadger.com/badges/version/ckulka/rhodecode-vcsserver.svg)](https://github.com/ckulka/rhodecode-vcsserver/tree/master "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/ckulka/rhodecode-vcsserver:4.10.5.svg)](https://github.com/ckulka/rhodecode-vcsserver/tree/4.10.5 "Get your own version badge on microbadger.com")
 
 This image is the same as [ckulka/rhodecode-rccontrol](https://hub.docker.com/r/ckulka/rhodecode-rccontrol), with the exception that a
 VCS Server is installed and ready-to-use.
